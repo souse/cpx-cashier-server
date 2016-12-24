@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>CPX</title>
+	<link href="./static/css/bootstrap.css" rel="stylesheet">
+	<link href="./static/css/index.css" rel="stylesheet">
+</head>
+<body>
+	<div class="set-controls">
+		<div class="set-title-content">
+			<div class="title">欢迎使用厨品秀收银系统</div>		
+		</div>
+		<div class="set-main">
+			<div class="row">
+				<div class="set-form col-md-6">
+					<form class="form-horizontal" role="form">
+						<div class="form-group form-group-lg">
+							<label class="col-md-3 control-label">站点类型:</label>
+							<div class="col-md-9">
+								<div class="site-type">
+									<input type="radio" name="siteType" checked value="0">服务器
+									<input type="radio" name="siteType" value="1">客服端
+								</div>	
+							</div>
+						</div>
+						<div class="form-group form-group-lg">
+							<label for="serverIp" class="col-md-3 control-label">服务器IP:</label>
+							<div class="col-md-9">
+								<input type="text" class="form-control" id="serverIp" placeholder="127.0.0.1">
+							</div>
+						</div>
+						<div class="form-group form-group-lg">
+							<label for="portNo" class="col-md-3 control-label">端口标示:</label>
+							<div class="col-md-9">
+								<input type="text" class="form-control" id="portNo" placeholder="8080">
+							</div>
+						</div>
+						<div class="form-group form-group-lg app-input">
+							<label for="storeId" class="col-md-3 control-label">门店ID:</label>
+							<div class="col-md-9">
+								<input type="text" class="form-control" id="storeId" placeholder="门店ID">
+							</div>
+						</div>
+						<div class="form-group form-group-lg app-input">
+							<label for="comKey" class="col-md-3 control-label">通讯秘钥:</label>
+							<div class="col-md-9">
+								<input type="text" class="form-control" id="comKey" placeholder="通讯秘钥">
+							</div>
+						</div>
+						<div class="form-group form-group-lg">
+							<label for="comKey" class="col-md-3 control-label"></label>
+							<div class="col-md-9">
+								<p>注意：主收银系统的服务器只能绑定一台电脑，绑定后无法更改机器，如需要增加副收银机，可以通过客户端添加，通讯秘匙使用一次自动失效。</p>
+							</div>
+						</div>
+						<div class="form-group form-group-lg">
+							<label for="comKey" class="col-md-3 control-label"></label>
+							<div class="col-md-9">
+								<button type="button" id="cancle" class="btn btn-default">取消</button>
+								<button type="button" id="submit" class="btn btn-primary">下一步</button>
+							</div>
+						</div>
+					</form>
+				</div>	
+				<div class="set-kb col-md-6">
+					<div class="keyboard-content keyboard-mini">
+						<div class="keyboard-number">
+							<button type="button" class="btn-normal btn-number" data-val="7">7</button>
+							<button type="button" class="btn-normal btn-number" data-val="8">8</button>
+							<button type="button" class="btn-normal btn-number" data-val="9">9</button>
+							<button type="button" class="btn-normal btn-number" data-val="4">4</button>
+							<button type="button" class="btn-normal btn-number" data-val="5">5</button>
+							<button type="button" class="btn-normal btn-number" data-val="6">6</button>
+							<button type="button" class="btn-normal btn-number" data-val="1">1</button>
+							<button type="button" class="btn-normal btn-number" data-val="2">2</button>
+							<button type="button" class="btn-normal btn-number" data-val="3">3</button>
+							<button type="button" class="btn-normal btn-number" data-val="0">0</button>
+							<button type="button" class="btn-normal btn-number" data-val="00">00</button>
+							<button type="button" class="btn-normal btn-number" data-val=".">.</button>
+						</div>
+						<div class="keyboard-operate">
+							<button type="button" id="delete" class="btn-normal btn-cancle"><span>删 除</span></button>
+							<button type="button" id="clear" class="btn-normal btn-confirm"><span>清 空</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./static/js/jquery.js"></script>
+	<script type="text/javascript" src="./static/js/index.js"></script>
+</body>
+</html>
