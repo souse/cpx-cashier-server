@@ -51,5 +51,7 @@
 	$('#cancle').on('click', function() {
 		//.NET 退出
 	});
-	$('#submit').on('click', function() {});
+	$('#submit').on('click', function() {
+		//提交
+	});
 })(jQuery);
