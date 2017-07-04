@@ -1,5 +1,3 @@
-## 厨品秀收银系统
-
 ## Features
 
 - [React](https://facebook.github.io/react/)
