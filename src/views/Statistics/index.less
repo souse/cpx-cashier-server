@@ -1,0 +1,37 @@
+.ant-table-fixed-header .ant-table-scroll .ant-table-header{
+	overflow: auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+.totalmsg{
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 100%;
+	ul > li {
+		display: inline-block;
+		margin-right: 25px;
+	}
+}
+
+.refund-report{
+	.dailydish{
+		overflow-x: scroll;
+		overflow-y: hidden;
+		> div {
+			min-width: 960px;
+		}
+	}	
+}
+
+@media (min-width: 1350px) {
+	.refund-report .dailydish{
+		> div {
+			min-width: 100%;
+		}
+	}	
+}

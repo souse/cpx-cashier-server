@@ -1,0 +1,165 @@
+/** 支付方式 键盘 */
+.payment-type{
+	padding: 10px 0px 10px 10px;
+	width: 290px;
+	// height: 176px;
+	position: relative;
+	height: 290px;
+	overflow: hidden;
+	// overflow-y: scroll;
+	.btn-normal{
+		color: #666;
+		width: 60px;
+		height: 60px;
+		padding: 11px 5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		border-radius: 6px;
+		border: 1px solid #999;
+		background: #e6e6e6;
+		background-image: linear-gradient(to bottom, #fff 0%, #d4d4d4 100%);
+		&:focus, &:hover{
+			background: #f3f3f3;
+			border: 1px solid #999;
+			color: #666;
+			outline: 0;
+		}
+		&:active{
+			color: #666;
+			outline: 0;
+			background-image: none;	
+			-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		}
+		&.active{
+			color: #fff;
+			background: #60bb47;
+            background-image: linear-gradient(to bottom, #72d556 0%, #50a53a 100%);		
+		}
+	}
+	.print-btn{
+		color: #fff;
+		width: 100%;
+		// margin-top: 10px;	
+		background: #3a9bdd;
+    	border-color: #3a9bdd;
+        background-image: linear-gradient(to bottom, #3fb4e7 0%, #3683d5 100%);
+		&:focus, &:hover{
+			background: #3a9bdd;
+			border: 1px solid #3a9bdd;
+			color: #fff;	
+		}
+		&:active{
+			color: #fff;
+		}
+	}
+	.normal-top{
+		position: absolute;
+		right: 2px;
+		bottom: 0px;
+		// background: url(images/1.png) no-repeat;
+		div{
+			background: url(images/1.png) no-repeat;
+			height: 16px;
+			width: 16px;
+			margin:0 auto;
+			margin-top: 6px;
+		}
+	}
+	.normal-bottom{
+		position: absolute;
+		right: 72px;
+		bottom: 0px;
+		div{
+			background: url(images/2.png) no-repeat;
+			height: 8px;
+			width: 12px;
+			margin:0 auto;
+		}
+	}
+
+	.pay-allway{
+		width: 60px;
+		height: 280px;
+		// background: yellow;
+		float: left;
+		// position: relative;
+		// .topicon{
+		// 	width: 22px;
+		// 	height: 23px;
+		// 	background: url(images/normal2.png) no-repeat;
+		// 	position: absolute;
+		// 	top: 44px;
+		// 	left: 20px;
+		// }
+		.btn-nortop{
+			height: 130px;
+			color: #666;
+			width: 60px;
+			padding: 11px 5px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			border-radius: 6px;
+			border: 1px solid #999;
+			background: #e6e6e6;
+			padding-top: 50px;
+			position: relative;
+			// background-image: linear-gradient(to bottom, #fff 0%, #d4d4d4 100%);
+			&.active{
+				color: #fff;
+				background: #3a9bdd;
+			}
+			.topicon{
+				width: 22px;
+				height: 23px;
+				background: url(images/normal2.png) no-repeat;
+				position: absolute;
+				top: 44px;
+				left: 20px;
+				&.active{
+				background: url(images/normal1.png) no-repeat;
+			  }
+			}
+		}
+		.btn-norbottom{
+			height: 130px;
+			color: #666;
+			width: 60px;
+			padding: 11px 5px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			border-radius: 6px;
+			border: 1px solid #999;
+			background: #e6e6e6;
+			padding-top: 50px;
+			position: relative;
+			// background-image: linear-gradient(to bottom, #fff 0%, #d4d4d4 100%);
+			&.active{
+				color: #fff;
+				background: #3a9bdd;
+			}
+			.bottomicon{
+				width: 22px;
+				height: 23px;
+				background: url(images/member1.png) no-repeat;
+				position: absolute;
+				top: 44px;
+				left: 20px;
+				&.active{
+				background: url(images/member2.png) no-repeat;
+			  }
+			}
+		}
+	}
+	.scrolllist{
+		float: right;
+		width: 212px;
+		overflow-y: scroll;
+		// height: 280px;
+	}
+	.payment-all{
+		height: 290px;
+	    overflow: scroll;
+	    // position: relative;
+	}
+}

@@ -1,0 +1,296 @@
+.cashier-control  .payment-contents{
+	background: #fff;
+}
+.payment-content{
+	width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+    background: transparent;
+    padding: 10px 10px;
+}
+
+.calc-detail{
+	width: 250px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 6px;
+	background: #2f312f;
+	padding: 0 10px;
+	position: relative;
+	h4{
+		font-weight: 400;
+		text-align: center;
+	}
+	> .calc-d, h4{
+		height: 32px;
+		line-height: 40px;
+		border-bottom: 1px solid #555655;
+	}
+	> .calc-d {		
+		> div {
+			&:first-child{
+				padding-left: 10px;
+			}
+			&:last-child{
+				color: #fa766b;
+				text-align: right;
+			}
+		}
+	}
+	.clac-invoice{
+		margin-top: 8px;
+		margin-bottom: 8px;
+		color: #999;
+		position: absolute;
+		bottom: 0;
+		.ant-checkbox-inner{
+			top: -1px;
+			width: 20px;
+		    height: 20px;
+		    border-color: #999;
+		    background: #2f312f;
+		}	
+		.ant-checkbox-checked .ant-checkbox-inner:after{
+			left: 6px;
+			top: 3px;	
+		}
+		.changemoey{
+			// width: 
+			button{
+				width: 100%;
+				padding-left: 10px;
+			}
+		}
+	}
+}
+.pay-info{
+	position: relative;
+	font-size: 14px;
+	color: #fff;
+	width: 324px;
+	height: 270px;
+	border-radius: 6px;
+	//margin-left: 8px;
+	background: #3a9bdd;
+    // background-image: linear-gradient(to right, #e7537f 0%, #e55c68 100%);
+	.pay-d{
+		height: 36px;
+		line-height: 36px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		> div {
+			&:first-child{
+				padding-left: 15px;
+			}
+		}
+		.rpm{
+			height: 36px;
+		}
+		.ant-input[disabled]{
+			color: #666;
+		}
+	}
+	.pay-title{
+		position: relative;
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
+		border-bottom: 1px solid #ccc;
+		margin: 0;
+		span{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			font-size: 17px;
+			font-weight: 400;
+		}
+	}
+	.paym{
+		font-size: 16px;
+	}
+	.dis-main{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 62px;
+		font-size: 12px;
+		border-top: 1px solid #ccc;
+		padding-top: 10px;
+		.vbtn{
+			width: 50px;
+			height: 40px;
+			background: #fff;
+			color: #50bfc8;
+			margin-right: 20px;
+			border-radius: 6px;
+			cursor: pointer;
+			&.active{
+				background: #f5715c;
+				color: #fff;
+			}
+			> span{
+				transform: scale(0.9);
+				display: block;
+			}
+			&.no-dis{
+			    >span {
+				    width: 40px;
+				    margin-top: 11px;
+				    margin-left: 5px;
+				    text-align: center;
+			    }
+			}
+			&.all-dis{
+				> span{
+					margin-top: 10px;
+					margin-left: 1px;
+					color:#666;
+				}	
+			}
+		}
+	}
+}
+.pay-main{
+	.continepay{
+		position: absolute;
+		bottom: 64px;
+		right: 20px;
+	}
+	.ant-select{
+		width: 100%;
+	}
+	.ant-select-lg .ant-select-selection--single{
+		height: 36px;
+	}
+	.ant-select-lg .ant-select-selection__rendered{
+		line-height: 34px;
+	}
+	.dis-all-check{
+		.ant-checkbox-inner{
+			top: -1px;
+			width: 20px;
+		    height: 20px;
+		    border-color: #999;
+		    background: #fff;
+		}	
+		.ant-checkbox-checked .ant-checkbox-inner:after{
+			left: 6px;
+			top: 3px;	
+			border-color: #108ee9;
+		}	
+	}
+	.dis-btns{
+		height: 30px;
+		line-height: 30px;
+		button {
+			margin-right: 20px;
+			border-radius: 5px;
+		}
+		.btn-dis-confirm{
+			border-color: #66c24c;
+			background: #66c24c;
+            background-image: linear-gradient(to bottom, #72d556 0%, #50a53a 100%);	
+		}
+	}	
+}
+.paycalc{
+	width: 100%;
+	background: #e3e3e6;
+	border-radius: 6px;
+	margin-top: 25px;
+}
+
+.salestyle{
+	margin-bottom: 30px!important;
+	margin-top: 20px!important;
+}
+.saleorder{
+	margin-right: 90px!important;
+}
+
+.smalllist{
+	font-size: 12px;
+	padding-left: 10px;
+	margin-top: 6px;
+	position: relative;
+}
+.deletesty{
+    width: 12px;
+    height: 12px;
+    background:url(images/deletea.png) no-repeat;	
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+}
+#saleval{
+	width: 202px;
+}
+
+
+
+@media (min-width: 1350px) {
+	.calc-detail{
+		width: 48%;
+	}	
+	.calc-detail {
+		> .calc-d, h4 {
+			height: 50px;
+			line-height: 50px;
+			border-bottom: 1px solid #555655;
+		}
+	}
+	.pay-info{
+		width: 48%;
+		height: 380px;
+	}
+	.payment-type{
+		width: 540px;
+		padding: 15px 0px 15px 15px;
+		.btn-normal {
+			width: 90px;
+			height: 68px;
+			margin-bottom: 15px;
+			margin-right: 15px;
+		}
+	}
+	.paycalc {
+		.keyboard-contentpay {
+			.keyboard-number{
+				width: 315px;
+			}
+			.keyboard-operate {
+				width: 100px;
+			}
+			.btn-normal {
+				width: 90px;
+				height: 68px;
+				margin-bottom: 15px;
+				margin-right: 15px;
+			}
+			.keyboard-operate i {
+				top: 25px;
+				left: 37px;	
+			}
+		}
+		.scrolllist {
+			span {
+				font-size: 14px;
+			}
+		}
+		.keyboard-operate .btn-confirm{
+			height: 146px;
+		}
+	}
+}
+.ant-btn{
+	height: auto;
+}
+
+
+
+

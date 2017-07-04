@@ -1,0 +1,131 @@
+body {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.ant-layout-aside {
+  position: relative;
+  min-height: 100%;
+  //background: -webkit-linear-gradient(left, #435987, #0a1e65);
+  background-image: url(./images/bg.png);
+  background-size: cover;
+  .ant-layout-main {
+    position: relative;
+    margin-left: 70px;
+    padding: 0 10px 10px 10px;
+    height: 100%;
+  }
+  .ant-layout-container {
+    .ant-layout-content {
+      background: transparent;
+    }
+  }
+}
+
+.cashier-control{
+  position: absolute;
+  top: 25px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  .menu{
+    position: relative;
+    width: 320px;
+    background: #fff;
+    height: 100%;
+  }
+  .cash-controls{
+    position: absolute;
+    top: 0;
+    left: 330px;
+    right: 0px;
+    bottom: 0;
+    background: transparent;
+  }
+}
+
+::-webkit-scrollbar-track-piece {
+ background-color: #fff;
+ -webkit-border-radius: 0;
+}
+
+::-webkit-scrollbar {
+ width: 8px;
+ height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+ height: 50px;
+ background-color: #999;
+ -webkit-border-radius: 4px;
+ outline: 2px solid #fff;
+ outline-offset: -2px;
+ border: 2px solid #fff;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+  height: 50px;
+  background-color: #9f9f9f;
+  -webkit-border-radius: 4px;
+ }
+
+/** update dialog */
+
+#confirmDialog {
+  display: -webkit-box;
+  display: -moz-box;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  z-index: 9999;
+  background: rgba(0,0,0,0.3);
+  .update-dg {
+    position: relative;
+    background: #fff;
+    margin: 20% auto;
+    padding: 10px 50px;
+    border-radius: 5px;
+    display:inline-block;
+    box-shadow: 0 0 10px #555;
+    height: 200px;
+  }
+  .update-dg-tip {
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    background: #2f9bdf;
+    top: 0;
+    color: #fff;
+  }
+  p{
+    font-size: 18px;
+    margin-top: 60px;
+  }
+  button{
+    border: none;
+    padding: 8px 15px;
+    line-height: 2;
+    color: #fcfcfc;
+    background: #108ee9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+
+
+

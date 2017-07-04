@@ -1,0 +1,129 @@
+.login-row {
+  height: 100%;
+  .login-form {
+    padding: 16px 8px;
+    background: #f8f8f8;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+  }
+}
+
+.login-controls{
+	input:-webkit-autofill {
+	  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+	}
+}
+
+.login-title-content{
+	width: 100%;
+	height: 80px;
+	background-image: url(./images/icon-login-bc.png);
+	background-size: cover;
+	align-items: center;
+	> div{
+		font-size: 24px;
+		color: #fff;
+		font-weight: 300;
+		line-height: 40px;
+		padding-left: 56px;
+		background: url(./images/icon-logo.png) 0 0 no-repeat;
+	}
+}
+.login-main{
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #eff6fc;
+	>div{
+		width: 800px;
+		background: #fff;
+		margin-top: -100px; 
+	}
+	.login-form{
+		padding: 80px 20px;
+		border-right: 1px solid #ededed;
+		form{
+			.txt{
+				padding-left: 2px;
+				font-size: 14px;
+				color: #349be1;
+			}
+			button{
+				height: 28px;
+			}
+			button.ant-btn-primary{
+				width: 120px;
+				border-radius: 2px;
+				margin-top: 25px;
+				background: #3a9bdd;
+    			border-color: #3a9bdd;
+                background-image: linear-gradient(to bottom, #3fb4e7 0%, #3683d5 100%);
+			}
+			button.ant-btn-default{
+				margin-left: 35px;
+				width: 120px;
+				border-radius: 2px;
+				margin-top: 25px;
+				background: #fff;
+    			border-color: #acacac;
+                background-image: linear-gradient(to bottom, #fff 0%, #d4d4d4 100%);
+                &:hover, &:focus{
+					color: #666;
+                }
+			}
+		}
+		.ant-form-item-label{
+			padding: 9px 0;
+			label{
+				font-size: 14px;
+			}
+		}
+		.ant-form-item-control{
+			line-height: 42px;
+			input{
+				height: 42px;
+			}	
+		}
+	}
+}
+.login-kb{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-btns{
+	padding-left: 20px;
+}
+
+.dontshow{
+	visibility: none;
+	img{
+		display: none;
+	}
+}
+
+@media (min-width: 1350px) {
+	.login-main > div {
+		width: 900px;
+	}
+	.login-kb .keyboard-content .keyboard-operate {
+		width: 94px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

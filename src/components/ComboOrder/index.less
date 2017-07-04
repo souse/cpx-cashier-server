@@ -1,0 +1,175 @@
+.comstyle{
+	.combo{
+	width: 100%;
+	position: relative;
+	overflow:hidden;
+	.combo_top{
+	     border-bottom: 1px solid #e9e9e9;
+	     height: 66px;
+		 .dish_first{
+		  	 padding-left: 3%;
+		  	 width: 40%;
+			 .dish-name{
+				line-height: 66px;
+				font-size: 16px;
+				color: #333333;
+			 }
+		  }
+	
+	  .operate-dish{
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			min-width: 160px;
+			margin-right: 20px;
+			height: 66px;
+			margin-left: 30px;
+			>i{
+				margin:0 10px;
+			}
+			>span{
+				color:#333;
+			}
+		}
+
+	}
+	.combolist{
+		width:100%;
+ 		overflow-y: scroll;
+ 		height: 550px;
+ 		min-height: 557px;
+		ul{
+			width:100%;
+
+		}
+		.comboli{
+			float: left;
+			width: 20%;
+			height: 100px;
+			margin-right: 2%;
+			border: 2px solid #96a5a7;
+			border-radius: 6px;
+			background: #fff;
+			color: #1e1e1e;
+			cursor: pointer;
+			position: relative;
+			margin-bottom: 2%;
+			&.active{
+				background: #f5d265;
+			    color: #1e1e1e;
+			}
+			i.amount{
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				top: -10px;
+				right: -1px;
+				font-style: normal;
+				text-align: center;
+				color: #fff;
+				background: #fc4c42;
+				border-radius: 50%;
+			}
+			.comtop{
+				text-align: center;
+				margin-top: 18%;
+				span{
+					font-size: 14px;
+				}
+			}
+			.quantity{
+				display: flex;
+				justify-content: space-between;
+				position: absolute;
+				width: 70%;
+				left: 15%;
+				bottom: 10px;
+				z-index: 20;
+			}
+			.num-up, .num-down{
+				display: block;
+				width: 24px;
+				height: 24px;
+				z-index: 10;		
+				cursor: pointer;
+			}
+			.num-up{
+				background: url(./images/icon-num-up.png);
+			}
+			.num-down{
+				background: url(./images/icon-num-down.png);
+			}
+		}
+		.dishclass{
+			height: 50px;
+			line-height: 50px;
+			padding-left: 3%;
+			.dishclassone{
+				font-size: 14px;
+				color: #999999;
+				margin-right: 10px;
+			}
+			.dishclasstwo{
+				font-size: 14px;
+				color: #999999;
+				margin-right: 20px;
+			}
+			.dishclassthree{
+				 font-size: 14px;
+				 color: #333333;
+			}
+		}
+		.dishsty{
+			padding-left: 3%;
+		}
+	}
+	.bom-btn{
+		width:100%;
+		position: absolute;
+		bottom: 100px;
+		right: 0;
+		.canlebtn{
+			height: 60px;
+			width:60px;
+			border-radius: 50%;
+			color: #fff;
+			cursor: pointer;
+			margin-left: 15px;
+			margin-right: 15px;
+			background: #fb739c;
+			// background-image: linear-gradient(to bottom, #72d556 0%, #50a53a 100%);
+			float: right;
+			>span{
+				display: block;
+				width: 24px;
+				margin-left: 18px;
+				margin-top: 10px;
+				padding-top: 23px;
+				background: url(images/canse.png) 3px 0px no-repeat;
+			}
+		}
+		.savebtn{
+			height: 60px;
+			width:60px;
+			border-radius: 50%;
+			color: #fff;
+			cursor: pointer;
+			margin-left: 15px;
+			margin-right: 15px;
+			background: #60bb47;
+			background-image: linear-gradient(to bottom, #72d556 0%, #50a53a 100%);
+			float: right;
+			>span{
+				display: block;
+				width: 24px;
+				margin-left: 18px;
+				margin-top: 10px;
+				padding-top: 23px;
+				background: url(images/icon-dish-save.png) 1px 0px no-repeat;
+			}
+		}
+	}
+	
+}
+}

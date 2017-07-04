@@ -1,0 +1,96 @@
+*{   
+    -webkit-touch-callout:none;  /*系统默认菜单被禁用*/   
+    -webkit-user-select:none; /*webkit浏览器*/   
+    -khtml-user-select:none; /*早期浏览器*/   
+    -moz-user-select:none;/*火狐*/   
+    -ms-user-select:none; /*IE10*/   
+    user-select:none;   
+} 
+input {      
+     -webkit-user-select:auto; /*webkit浏览器*/     
+}  
+
+.opentable{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    .ant-select-selection-selected-value{
+    	line-height: 44px;
+    }
+}
+.tablemessage{
+	width: 440px;
+    border: 2px solid #ccc;
+    border-radius: 6px;	
+    margin-bottom: 20px;
+}
+.ant-form{
+	.ant-form-item{
+		margin-bottom: 8px;
+	}
+	.form-title{
+		border-bottom: 1px solid #ccc;
+		// margin-bottom: 10px;
+		.ant-form-item-label{
+			padding: 10px 0;
+		}
+		.ant-form-item-control{
+			line-height: 48px;
+		}
+		.table-name{
+			font-size: 19px;
+			font-weight: 400;
+			color: #3184d9;
+			margin-left: 100px;
+		}
+	}
+	.form-input{
+		.ant-form-item-label{
+			padding: 12px 0;
+			padding-top: 6px;
+		}
+		.ant-input-lg,
+		.ant-select-lg .ant-select-selection--single,
+		.ant-select-lg .ant-select-selection__rendered{
+			height: 40px;
+		}
+	}
+}
+
+.opentable{
+	.keyboard-content{
+		background: #e3e3e6;
+	}	
+}
+
+.personnaem{
+	height: 40px!important;
+}
+
+@media (min-width: 1350px) {
+	.tablemessage {
+		width: 526px;
+		margin-bottom: 50px;
+	}
+	.keyboard-content {
+		.btn-normal {
+			width: 90px;
+			padding: 20px 5px;
+		}
+		.keyboard-number {
+			width: 306px;	
+		}
+		.keyboard-operate {
+			width: 205px;
+			i {
+				left: 35px;
+    			top: 23px;
+			}
+			.btn-clearpay, .btn-confirm {
+				height: 200px;	
+			}	
+		}
+	}
+}

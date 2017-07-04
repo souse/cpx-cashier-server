@@ -1,0 +1,136 @@
+
+.pay-od{
+	border-top: 1px dashed #ccc;
+    padding: 5px 15px;	
+    > div{
+    	color: #888;
+    	margin-bottom: 5px;
+    	&:last-child{
+    		margin-bottom: 0px;
+    	}
+    }
+}
+
+.bill-olist{
+	position: absolute;
+	top: 220px;
+	left: 0;
+	width: 100%;
+	bottom: 309px;
+	overflow: hidden;
+    .ant-table{
+        width: 320px;
+    }	
+}
+.open-invoice{
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    .invoice-m{
+        color: #f65e51;
+        text-align: right;
+    }    
+}
+.recalc{
+    font-size: 14px;
+    margin-bottom: 10px;
+    h4{
+        color: #f65e51;
+        font-size: 14px;
+    }
+    label{
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #ccc;
+    }
+    .ant-checkbox-inner{
+        top: -1px;
+    }
+}
+
+.menu-total{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 80px;
+        color: #666;
+        border-top: 2px solid #e7e8e9;
+        border-bottom: 2px solid #e7e8e9;
+        .pd{
+            padding: 10px 15px 10px 15px;
+        }
+        p{
+            float: left;
+        }
+        .tol-d{
+            margin-bottom: 0px!important;
+        }
+        span{
+            width: 80px;
+            float: left;
+            height: 18px;
+            padding-left: 10px;
+            line-height: 18px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #1e1e1e;
+            margin-right: 3px;
+            &.real-m{
+                color: #f5715c;
+            }
+        }
+    }
+
+.op-delete{
+    margin-left: 0!important;
+    div{
+        background: url(images/red.png) no-repeat;
+        span{
+            background: url(images/delete.png) no-repeat 4px 0px;
+        }
+    }
+}
+.op-nodelete{
+    text-align: center;
+    margin-left: 0!important;
+    div{
+        background: url(images/red.png) no-repeat;
+        text-align: center;
+        span{
+            width: 34px;
+            margin: 0;
+            padding-top: 12px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.inputnewstyle{
+    width: 250px;
+}
+.ant-input-preSuffix-wrapper{
+    width: auto;
+}
+.ant-modal-title{
+    text-align: center;
+}
+
+.contentshow{
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+.op-disable>div{
+    background: #acacac;
+    background-image: linear-gradient(to bottom, #acacac 0%, #acacac 100%);
+}
+
+@media (min-width: 1350px) {
+    .open-invoice-dig {
+        width: 560px !important;
+    }
+}
+
+
+

@@ -1,0 +1,113 @@
+/** 桌子 */
+.cash-controls{
+	.cash-control{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 80px;
+		bottom: 0;
+		background: #fff;
+		.cashs{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 80px;
+			padding: 10px;
+			overflow: hidden;
+		}
+	}
+	.ob-change{
+		width: 80px;
+		height: 100%;
+		overflow: hidden;
+		.change-common{
+			font-size: 15px;
+			color: #fff;
+			text-align: center;
+			background: #fd8e4f;
+			line-height: 46px;
+			margin-bottom: 10px;
+			border: 1px solid #fd8e4f;
+			border-left: 0;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			cursor: pointer;
+			&:hover, &.active{
+				background: #fff;
+				color: #fd8e4f;
+			}
+		}
+	}
+}
+/** 每个桌子 */
+.cashs{
+	.cash{
+		position: relative;
+		float: left;
+		height: 120px; //124
+		width: 23.5%;
+		border: 1px solid red;
+		margin-right: 2%;
+		margin-bottom: 10px;
+		border: 2px solid #96a5a7;
+		border-radius: 6px;
+		background: #fff;
+		color: #1e1e1e;
+		cursor: pointer;
+		&.ct5{
+			margin-right: 0;
+		}
+		&.active, &.current{
+			color: #fff;
+			.yang{
+				color: #fffbda;
+			}
+		}
+		&.active{
+			background: #4abfc9;
+		}
+		&.current{
+			background: #50ae38;
+		}
+		span{
+			display: block;
+			width: 100%;
+			text-align: center;
+			padding: 0 5px;
+		}
+		.title{
+			font-size: 16px;
+			margin-top: 12px;//15
+			font-weight: 300;
+		}
+		.yang{
+			font-size: 20px;
+			font-weight: 200;
+			margin-top: 1px
+		}
+		.posi, .ltime{
+			margin-top: 3px;
+		}
+		.ltime{
+			text-align: right;
+		    position: absolute;
+			bottom: 8px;
+		}
+		&.soldout{
+			background: #FF0000;
+		    border-color: #FF0000;
+		    color: #fff;
+		}
+	}	
+}
+
+@media (min-width: 1350px) {
+	.cashs {
+		.cash {
+			width: 18.5%;
+			margin-right: 1.875%;	
+		}
+	}
+}
+

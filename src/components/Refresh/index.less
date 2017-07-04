@@ -1,0 +1,65 @@
+.ob-opreate{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 80px;
+	border-top: 2px solid #e7e8e9;
+	align-items: center;
+	padding: 0 10px;
+	.example{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: black;
+		opacity: 0.3;
+		filter: alpha(opacity=30);
+		z-index: 9999;
+		.ant-spin-spinning{
+			 position: absolute;
+			 top: 50%;
+			 left: 50%;
+		}
+	}
+}
+
+.btns{
+		> button{
+			width: 80px;
+			font-size: 14px;
+			padding: 8px 2px;
+			margin-right: 8px;
+			font-weight: 400;
+			height: auto;
+			&:hover, &:focus{
+				outline: 0;
+			}
+			&:active{
+				outline: 0;
+    			background-image: none;	
+    			-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  				box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			}
+			i.rotate{
+				transform: rotate(90deg);
+			}
+		}
+		.btn-lv{
+			border-color: #60bb47;
+			background: #60bb47;
+		    background-image: linear-gradient(to bottom, #72d556 0%, #50a53a 100%);	
+		}
+		.btn-hong{
+			background: #fb739c;
+			border-color: #fb739c;
+			background-image: linear-gradient(to bottom, #fd87ac 0%, #f85d8b 100%);
+		}
+		.btn-lan{
+			background: #3a9bdd;
+			border-color: #3a9bdd;
+			background-image: linear-gradient(to bottom, #3fb4e7 0%, #3683d5 100%);
+		}
+	}
+	
